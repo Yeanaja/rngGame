@@ -25,5 +25,6 @@ int main (void) {
         scanf(" %c", &yN);
         yN = tolower(yN);
     }
+    printf("\nThanks for playing Number Guesser with us!\n")
     return 0;
 }
