@@ -7,7 +7,7 @@
 #define FALSE 0
 
 int main (void) {
-    printf("Welcome to Number Guesser!\n");
+    printf("Welcome to Number Guesser!\n\n");
     int userGuess = 0;
     char yN = 'y'; 
     while (yN == 'y') {
