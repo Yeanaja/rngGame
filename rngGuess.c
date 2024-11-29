@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <time.h>
 
 #define MAX 10
 #define TRUE 1
 #define FALSE 0
 
 int main (void) {
-    printf("Welcome to Number Guesser!\n\n");
+    printf("==Welcome to Number Guesser!==\n\n");
     int userGuess = 0;
     char yN = 'y'; 
     while (yN == 'y') {
         printf("Input you guess: ");
         scanf("%d", &userGuess);
-        int num = rand() % MAX ;
+        srand(time(NULL));
+        int num = rand() % MAX;
 
         if (userGuess == num) {
             printf("Congrats! You guess it correctly!\n");
@@ -25,6 +27,6 @@ int main (void) {
         scanf(" %c", &yN);
         yN = tolower(yN);
     }
-    printf("\nThanks for playing Number Guesser with us!\n")
+    printf("\n==Thanks for playing with us!==\n");
     return 0;
 }
